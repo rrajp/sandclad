@@ -1,6 +1,8 @@
 /* Base */
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+scroll-behavior: smooth;
+}
 
 body {
   line-height: 1.7;
@@ -552,11 +554,11 @@ body:after {
     .sticky-wrapper.is-sticky .site-navbar .site-menu-toggle {
       color: #000; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-      color: #007bff; }
+      color: #9d6224; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
       color: #000 !important; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
-        color: #007bff !important; }
+        color: #9d6224 !important; }
 
 /* Blocks */
 .site-blocks-cover {
@@ -1121,7 +1123,7 @@ body:after {
   .h-entry h2 a {
     color: #000; }
     .h-entry h2 a:hover {
-      color: #007bff; }
+      color: #9d6224; }
 
 .overlap-left {
   margin-left: -100px; }
@@ -1590,7 +1592,7 @@ body:after {
   text-transform: uppercase; }
 
 .section-title {
-  color: #007bff;
+  color: #9d6224;
   font-size: 40px;
   font-weight: 900; }
   @media (max-width: 991.98px) {
