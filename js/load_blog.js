@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         heroSection.style.display = 'none';
                     }
                     fullBlogPostSection.style.display = 'block';
+                    const scrollOffset = window.innerHeight * 0.05;
+                    window.scrollTo({
+                    top: scrollOffset,
+                    behavior: 'smooth' // Optional: adds a smooth scrolling effect
+                });
                 })
                 .catch(error => console.error('Error loading blog post:', error));
         });
@@ -46,6 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (heroSection) {
                 heroSection.style.removeProperty('display');
             }
+             window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Optional: adds a smooth scrolling effect
+                });
         });
     } else {
         console.error("Back to main button not found");

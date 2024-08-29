@@ -2098,3 +2098,57 @@ figure figcaption {
       background-color: rgba(255, 255, 255, 0.5); }
     .single-text .owl-dots .owl-dot.active > span {
       background-color: #fff; }
+
+.core-values {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the container */
+  justify-content: space-between;
+  margin-top: 40px; /* Adjust margin as needed */
+  position: relative; /* Ensure positioning context for pseudo-elements */
+}
+
+/* Styles for Each Core Value Item */
+.core-value-item {
+  flex: 1; /* Ensure columns take equal space */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure content is above pseudo-elements */
+  display: flex;
+  flex-direction: column; /* Stack text content vertically */
+  justify-content: flex-start; /* Align content at the top */
+}
+/* Vertical Lines Between Columns */
+
+
+.core-values > div:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 2px;
+  background: #9d6224; /* Adjust color as needed */
+  height: 100%; /* Make sure this height is appropriate for your content */
+  position: absolute;
+  top: 0;
+  right: -10px; /* Adjust spacing from content */
+  z-index: -1; /* Place line behind content */
+}
+
+.core-values::before {
+  left: 33.33%;
+}
+
+.core-values::after {
+  right: 33.33%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .core-values {
+    flex-direction: column;
+  }
+
+  .core-values::before,
+  .core-values::after {
+    display: none;
+  }
+}
